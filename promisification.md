@@ -24,14 +24,14 @@ print("**");
 ```
 
 자바스크립트에서는 setTimeout을 이용해 구현이 가능하나 다음과 같이 처리되어야 합니다.
-```
+```js
 console.log('*');
 setTimeout( () => {
   console.log('**');
 }, 1000 );
 ```
 이를 Promise로 구현해 sleep() 함수를 선언한 다음 다음 다음과 같이 실행할 수 있도록 만드세요.
-```
+```js
 async function exec() {
   console.log('*');
   await sleep(1);
